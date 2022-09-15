@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment:unset;
+    background-position: top;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 2rem;
+
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.padding-main{
+    padding: 4.5rem 2rem;
+    max-width: 35.5rem;
+    margin: auto;
+    
+}
+
+.illus{
+    width: 100%
+}
+
+h1{
+    color: hsl(223, 47%, 23%);
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.top{
+    color: hsl(224, 23%, 55%);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+section{
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    margin-right: 1.3rem;
+}
+
+.left p{
+    font-size: 1.5rem;
+}
+
+.plan{
+    line-height: 2.4rem;
+}
+
+.bold {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.light{
+    color: hsl(224, 23%, 55%);
+    font-weight: 400;
+}
+
+a{
+    font-size: 1.3rem;
+    color: hsl(245, 75%, 52%);
+    transition: color 0.3s;
+}
+
+a:hover{
+    color: hsla(245, 75%, 52%, 0.6);
+    text-decoration: none;
+}
+
+button{
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+}
+
+.btn-1 {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.4rem;
+    font-weight: 900;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 2px 9px 22px -7px hsl(245, 75%, 52%);
+    margin-bottom: 2.5rem;
+    transition: background-color 0.3s;
+}
+
+.btn-2{
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    transition: color 0.3s;
+}
+
+.btn-1:hover{
+    background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.btn-2:hover{
+    color: black;
+}
+
+@media all and (max-width: 470px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .btn-1{
+        margin-bottom: 3.4rem;
+    }
+}
+
+@media all and (max-width: 285px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    section{
+        flex-direction: column;
+    }
+
+    a{
+        margin-top: 2rem;
+    }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
